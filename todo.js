@@ -15,15 +15,10 @@ addButton.addEventListener('click',addItem);
 var removeButton= document.getElementById('remove');
 removeButton.addEventListener('click',removeItem);
 
-
-
-
-
-
-
-
-
-
+$("input[type='text']").keypress(function(event){
+	if(event.which === 13)
+		addItem();
+});
 
 
 function addItem(){
@@ -57,6 +52,7 @@ function addItem(){
 	 	li.appendChild(label);
 	 	ul.insertBefore(li,ul.childNodes[0]);
 	 	li.className='visual';
+	 	input.value='';
 	 }
 }
 
