@@ -1,12 +1,10 @@
-body{
-	background-size:100% 100%;
-	max-width:100%;
-	background-repeat: no-repeat;
-	max-height:100%;
-	background-height:auto;
-	
+html { 
+  background: url("http://pinet.org.uk/assets/images/desktop-background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
 
 
 #container{
